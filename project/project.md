@@ -14,17 +14,17 @@ Data Set:
   * Pull info about specific bills 
   * Sample data
 ```json
-  "alexander": [
-    {
-      "first": "Lamar", 
-      "full": "Lamar Alexander", 
-      "last": "Alexander", 
-      "nays": 65, 
-      "party": "R", 
-      "state": "TN", 
-      "yeas": 247
-    }
-  ]
+"alexander": [
+  {
+    "first": "Lamar", 
+    "full": "Lamar Alexander", 
+    "last": "Alexander", 
+    "nays": 65, 
+    "party": "R", 
+    "state": "TN", 
+    "yeas": 247
+  }
+]
 ```
   
 Machine Learning: 
