@@ -12,6 +12,20 @@ Data Set:
   * Compiled into one data set 
   * Include how Senator voted on a specific bill 
   * Pull info about specific bills 
+  * Sample data
+```json
+  "alexander": [
+    {
+      "first": "Lamar", 
+      "full": "Lamar Alexander", 
+      "last": "Alexander", 
+      "nays": 65, 
+      "party": "R", 
+      "state": "TN", 
+      "yeas": 247
+    }
+  ]
+```
   
 Machine Learning: 
   * For each senator atempt to learn their trends in voting 
