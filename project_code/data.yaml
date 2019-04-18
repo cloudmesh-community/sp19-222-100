@@ -1,0 +1,29 @@
+swagger: "2.0"
+info: 
+  version: "0.0.1"
+  title: "presidential support"
+  description: "Gets data from an enternal location for use with ML training"
+  termsOfService: "http://swagger.io/terms/"
+  license: 
+    name: "Apache"
+host: "localhost:8080"
+basePath: {}
+schemes: 
+  - "http"
+consumes: 
+  - "application/json"
+produces: 
+  - "application/json"
+paths:
+  /data/<output>:
+    get:
+      tags:
+        - DATA
+      operationId: data.download
+      description: "Downloads data from a url"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Data info"
+          schema: ""

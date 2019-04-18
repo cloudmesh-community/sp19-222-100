@@ -1,0 +1,29 @@
+swagger: "2.0"
+info: 
+  version: "0.0.1"
+  title: "presidential support"
+  description: "Attempts to determine how much support a candidate will receive based on their viewpoints"
+  termsOfService: "http://swagger.io/terms/"
+  license: 
+    name: "Apache"
+host: "localhost:8080"
+basePath: "/"
+schemes: 
+  - "http"
+consumes: 
+  - "application/json"
+produces: 
+- "application/json"
+paths:
+  /data/<output>:
+    get:
+      tags:
+        - DATA
+      operationId: data.download
+      description: "Downloads data from an external location"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Data info"
+          schema: {}
