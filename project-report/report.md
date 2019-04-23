@@ -13,9 +13,9 @@ blah
 
 ## Introduction 
 
-what - predicting how country votes based off of what hypothetical canidate would support 
-why - to attempt to determine the politcal voting trends of the United States 
-Algorithm used - K Nearest Neighbors 
+- What: predicting how country votes based off of what hypothetical canidate would support 
+- Why: to attempt to determine the politcal voting trends of the United States 
+- Algorithm used: K Nearest Neighbors 
 
 ## Requirements
 
