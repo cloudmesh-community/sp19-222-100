@@ -13,8 +13,20 @@ schemes:
 consumes: 
   - "application/json"
 produces: 
-- "application/json"
+  - "application/json"
 paths:
+  /run/<hlt>/<mil>/<edu>/<tax>/<wmr>/<glb>/<gnr>/<inf>/<mnr>/<img>:
+    get:
+      tags:
+        - RUN
+      operationId: run.run
+      description: "Runs an analysis based on given arguments"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Run analysis"
+          schema: {}
   /data/<output>:
     get:
       tags:

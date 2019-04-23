@@ -4,8 +4,3 @@
 
 ## Week 3/19 - 3/22
 * Practice with KNN algorithm
-
-## Week 3/25 - 3/29
-* Clean up project directory and follow given structure
-* Build docker containers for our projects
-* Prepared dataset for project, ready to perform ML on dataset

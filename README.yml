@@ -5,8 +5,3 @@ owner:
   hid: sp19-222-100
   community: e222
   semester: sp19
-project:
-  - title: "Political Bias and Voting Trends"
-    url: "https://github.com/cloudmesh-community/sp19-222-100/blob/master/project_report/report.md"
-    code: "https://github.com/cloudmesh-community/sp19-222-100/blob/master/project_code"
-    keywords: "Voting"
