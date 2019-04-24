@@ -24,12 +24,19 @@ what needed to run:
 
 ## Design
 
-blah
+- BASE PATH:
+- /cloudmesh/preselec
+
+- END POINTS:
+- /data/<file>.csv
+- /run/neighbors
+- /run/test
+- /run/custom/<neighbors>/<healthcare>/<military>/<education>/<tax wealthy>/<womens rights>/<globalism>/<gun rights>/<infrastructure>/<minority rights>/<immigration>
 
 ## Dataset
 
-- csv file 
-- presidentail canidate from the years 1988 to 2016 with party  
+- took csv file and uploaded to website 
+- presidential candidate from the years 1988 to 2016 with party  
 - top 4 year year both with percent and number of votes 
 - array of 0 and 1 (best for k nearest neighbors) that say if they support the 10 topics
 - for the Keywords/Label array each element correlates with the topics 
@@ -46,7 +53,9 @@ blah
 
 ## Implementation
 
-blah
+- python framework which contains machine learning code 
+- REST api to retreive data and connect python framework with frontend website
+- Docker to containerize it all 
 
 ## Conclusion
 
