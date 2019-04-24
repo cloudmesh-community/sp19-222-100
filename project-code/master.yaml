@@ -15,17 +15,41 @@ consumes:
 produces: 
   - "application/json"
 paths:
-  /run/<hlt>/<mil>/<edu>/<tax>/<wmr>/<glb>/<gnr>/<inf>/<mnr>/<img>:
+  /run/custom/<neighbors>/<hlt>/<mil>/<edu>/<tax>/<wmr>/<glb>/<gnr>/<inf>/<mnr>/<img>:
     get:
       tags:
-        - RUN
-      operationId: run.run
+        - RUN_CUSTOM
+      operationId: run.run_custom
       description: "Runs an analysis based on given arguments"
       produces:
         - "application/json"
       responses:
         "200":
-          description: "Run analysis"
+          description: "Run custom analysis"
+          schema: {}
+  /run/test:
+    get:
+      tags:
+        - RUN_TEST
+      operationId: run.run_test
+      description: "Runs an analysis based on test/train data from dataset."
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Run test analysis"
+          schema: {}
+  /run/neighbors:
+    get:
+      tags:
+        - RUN_NEIGHBORS
+      operationId: run.neighbors
+      description: "Determines best neighbor argument to use for KNN algorithm"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Run neighbor search"
           schema: {}
   /data/<output>:
     get:
