@@ -24,6 +24,21 @@ what needed to run:
 
 ## Design
 
+The design of this project is quite simple for people to use. From a high-level
+perspective, all a user needs to do is build a docker container and proceed to
+the endpoints defined. To break this down, the project is split up into three 
+parts: the python code containing the machine learning logic, the REST API 
+connecting the python code to a website that can be navigated to, and a docker
+container that houses all of the files necessary for the project. Below each
+part will be discussed in more detail.
+
+### Python
+
+This project makes use of sklearn's K-Nearest Neighbors algorithm
+[@scikit-learn] to perform machine learning on the dataset. 
+
+### REST API
+
 - BASE PATH:
 - /cloudmesh/preselec
 
@@ -32,6 +47,10 @@ what needed to run:
 - /run/neighbors
 - /run/test
 - /run/custom/<neighbors>/<healthcare>/<military>/<education>/<tax wealthy>/<womens rights>/<globalism>/<gun rights>/<infrastructure>/<minority rights>/<immigration>
+
+### Docker
+
+containers
 
 ## Dataset
 

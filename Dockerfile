@@ -5,13 +5,11 @@ RUN apt-get update -y && \
 
 RUN git clone https://github.com/cloudmesh-community/sp19-222-100.git
 
-COPY
+WORKDIR sp19-222-100
 
 RUN pip install -r requirments.txt
 
-COPY . /app
+ENTRYPOINT ["python3"]
 
-ENTRYPOINT ["python"]
-
-CMD ["app.py"]
+CMD ["server.py"]
 
