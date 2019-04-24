@@ -13,13 +13,14 @@ blah
 
 ## Introduction 
 
-- What: predicting how country votes based off of what hypothetical canidate would support 
-- Why: to attempt to determine the politcal voting trends of the United States 
+- What: predicting if a hypothetical candidant would win based off of their inputed views array
+- Why: to attempt to determine the politcal voting trends of the United States
 - Algorithm used: K Nearest Neighbors 
 
 ## Requirements
 
-blah
+what needed to run:
+- Docker within itself will download needed python libraries found from inside requirements.txt
 
 ## Design
 
@@ -53,4 +54,6 @@ blah
 
 ## Work Breakdown
 
-blah
+- Gathering data: both 
+- Code: J = set up kNN algorithm M = set up trainging and testing data
+- Report M = overall outline J = abstract BOTH = review and edits of outline 
