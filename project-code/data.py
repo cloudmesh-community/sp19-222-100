@@ -1,6 +1,6 @@
 import requests
 
-url = "http://pages.iu.edu/~jsaxberg/data.csv"
+url = "http://pages.iu.edu/~jsaxberg/pres.csv"
 
 def download_data(url, filename):
     req = requests.get(url, allow_redirects=True)

@@ -1,7 +1,7 @@
 import pandas
 import requests
 
-url = "http://pages.iu.edu/~jsaxberg/data.csv"
+url = "http://pages.iu.edu/~jsaxberg/pres.csv"
 
 def get_data():
     req = requests.get(url, allow_redirects=True)
@@ -11,5 +11,5 @@ def get_data():
 
 def run(hlt, mil, edu, tax, wmr, glb, gnr, inf, mnr, img):
     data = get_data()
-    return("Analysis finished: %s %s %s %s %s %s %s %s %s %s" % (hlt, mil, edu, tax, wmr, glb, gnr, inf, mnr, img))
+    return(data.head())
 
