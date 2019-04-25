@@ -17,6 +17,12 @@ blah
 
 ## Introduction 
 
+Sklearn's K-Nearest Neighbors algorithm was used to train a classifier which
+determines if a presidential candidate would win or lose an election based on
+their support or opposition to ten issues-healthcare, military, education, 
+taxing the wealthy/businesses, women's rights, globalism, gun rights,
+infrastructure, minority rights, and immigration. 
+
 The goal of this project was to predict if a hypothetical candidate would win based off of what idea and views they supported for a specific ten issues. The issues include if the candidate supported healthcare, increase in spending on military, education, increase taxes on the wealthy, supporting women rights, globalism, gun rights, increase in infrustructure, minoity rights, and immigration. The reason behind this was to try and determine the political voting trends of the United States. The algorithm used was K Neareest Neighbor and the implimentation will later be discussed. 
 
 :wave: avoid phrases like the goal of this project. 
