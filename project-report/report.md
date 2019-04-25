@@ -38,8 +38,17 @@ part will be discussed in more detail.
 
 ### Python
 
-This project makes use of sklearn's K-Nearest Neighbors algorithm
-[@scikit-learn] to perform machine learning on the dataset. 
+This project makes use of sklearn's K-Nearest Neighbors algorithm 
+[@scikit-learn] to perform machine learning on the dataset. Sklearn allows easy
+use of many machine learning algorithms. Using their K-Nearest Algorithm is as
+simple as using the lines:
+
+'''python
+classifier = KNeighborsClassifier(n_neighbors=5)
+classifier.fit(x_train, y_train)
+
+pred = classifier.predict(x_test)
+'''
 
 ### REST API
 
@@ -57,6 +66,11 @@ This project makes use of sklearn's K-Nearest Neighbors algorithm
 containers
 
 ## Dataset
+
+The dataset for this project had to be built from scratch as there were not any
+easily accessible dataset with the features desired. On order to create the
+dataset, google sheets was used to input data, and then the spreadsheet was
+downloaded as a csv file. 
 
 - took csv file and uploaded to website 
 - presidential candidate from the years 1988 to 2016 with party  
