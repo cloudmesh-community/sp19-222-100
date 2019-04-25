@@ -4,3 +4,4 @@ sklearn
 pandas
 requests
 numpy
+matplotlib
