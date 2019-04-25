@@ -66,7 +66,7 @@ containers
     - example is 0 for 3rd element means they do not support education 
     - example is 1 for 5th element means they do support womens right and pro choice 
 - Websites we got data from 
-    - https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwjZ-4Sr1efhAhUCHqwKHa9ABSwQFjAAegQIBhAC&url=https%3A%2F%2Fwww.ontheissues.org%2F&usg=AOvVaw1Mhc94uff2nsTJNTOn6uF0
+    - https://www.ontheissues.org/default.htm
     
     - https://transition.fec.gov/pubrec/electionresults.shtml
     
