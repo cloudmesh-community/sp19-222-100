@@ -72,17 +72,21 @@ containers
     
     This page and other Canidates Wikipedia pages
     - https://en.wikipedia.org/wiki/Barack_Obama_2008_presidential_campaign
-        
+- note bias and limitations while creating dataset which can affect results
+    
+## Results
 
-## Implementation
+- accuracy (f1 score, precision, recall, etc)
+- possibly run lasso algorithm to see which features are the most/least impactful
 
-- python framework which contains machine learning code 
-- REST api to retreive data and connect python framework with frontend website
-- Docker to containerize it all 
+## Discussion
+
+- discussion on how political data can apply to AI/ML, especially in today's time (polarization makes AI/ML easier)
+- importance of making the connection/application
 
 ## Conclusion
 
-blah
+- reiterate results and accuracy, future endeavors/predictions (if any) 
 
 ## Work Breakdown
 
