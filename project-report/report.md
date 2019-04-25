@@ -50,16 +50,32 @@ classifier.fit(x_train, y_train)
 pred = classifier.predict(x_test)
 ```
 
+With the use of that code, everything within the scope of this project can be
+completed. When users pass their own hypothetical candidate with ten arguments,
+the arguments are added to an array that is then passed through the predict
+function and the classifier determines if the candidate would win or lose based
+on the given arguments. 
+
 ### REST API
+
+The REST API allows simple connection between backend python code and a
+frontend website/API where users can pass data in and receive it back as a json
+formatted object. People can easily access the classifier through the API
+without the need to build it and run it on their own. Endpoints are 
+developer-designed urls that can be navigated to so users can run the
+classifier and other useful features. The basepath is what prefixes all other
+endpoints; it can be thought of as a top level directory and all of the
+endpoints are files within the directory structure. Below, the basepath and 
+endpoints are listed.
 
 - BASE PATH:
 - /cloudmesh/preselec
 
 - END POINTS:
-- /data/<file>.csv
+- /data/\<file\>.csv
 - /run/neighbors
 - /run/test
-- /run/custom/<neighbors>/<healthcare>/<military>/<education>/<tax wealthy>/<womens rights>/<globalism>/<gun rights>/<infrastructure>/<minority rights>/<immigration>
+- /run/custom/\<neighbors\>/\<healthcare\>/\<military\>/\<education\>/\<tax wealthy\>/\<womens rights\>/\<globalism\>/\<gun rights\>/\<infrastructure\>/\<minority rights\>/\<immigration\>
 
 ### Docker
 
