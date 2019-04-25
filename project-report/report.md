@@ -68,10 +68,10 @@ endpoints; it can be thought of as a top level directory and all of the
 endpoints are files within the directory structure. Below, the basepath and 
 endpoints are listed.
 
-- BASE PATH:
+BASE PATH:
 - /cloudmesh/preselec
 
-- END POINTS:
+END POINTS:
 - /data/\<file\>.csv
 - /run/neighbors
 - /run/test
