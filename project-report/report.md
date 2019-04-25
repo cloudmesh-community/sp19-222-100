@@ -13,9 +13,7 @@ blah
 
 ## Introduction 
 
-- What: predicting if a hypothetical candidant would win based off of their inputed views array
-- Why: to attempt to determine the politcal voting trends of the United States
-- Algorithm used: K Nearest Neighbors 
+The goal of this project was to predict if a hypothetical candidate would win based off of what idea and views they supported for a specific ten issues. The issues include if the candidate supported healthcare, increase in spending on military, education, increase taxes on the wealthy, supporting women rights, globalism, gun rights, increase in infrustructure, minoity rights, and immigration. The reason behind this was to try and determine the political voting trends of the United States. The algorithm used was K Neareest Neighbor and the implimentation will later be discussed. 
 
 ## Requirements
 
