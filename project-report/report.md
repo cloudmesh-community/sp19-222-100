@@ -43,12 +43,12 @@ This project makes use of sklearn's K-Nearest Neighbors algorithm
 use of many machine learning algorithms. Using their K-Nearest Algorithm is as
 simple as using the lines:
 
-'''python
+```python
 classifier = KNeighborsClassifier(n_neighbors=5)
 classifier.fit(x_train, y_train)
 
 pred = classifier.predict(x_test)
-'''
+```
 
 ### REST API
 
