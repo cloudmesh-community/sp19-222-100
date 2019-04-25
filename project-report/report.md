@@ -70,12 +70,17 @@ endpoints are listed.
 
 BASE PATH:
 - /cloudmesh/preselec
+  - Prefixes all endpoints; for example, `/cloudmesh/preselec/run/test`.
 
 END POINTS:
 - /data/\<file\>.csv
+  - Downloads the csv data file, named as the argument provided for file.
 - /run/neighbors
+  - Runs an analysis that determines the best argument for n_neighbors.
 - /run/test
+  - Runs an analysis with testing and training sets, also exports a graph.
 - /run/custom/\<neighbors\>/\<healthcare\>/\<military\>/\<education\>/\<tax wealthy\>/\<womens rights\>/\<globalism\>/\<gun rights\>/\<infrastructure\>/\<minority rights\>/\<immigration\>
+  - Allows user to perform classification with custom arguments.
 
 ### Docker
 
