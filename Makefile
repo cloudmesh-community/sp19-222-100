@@ -8,12 +8,12 @@ docker-all: docker-build docker-start
 
 docker-build:
 	@echo "building the image from docker file..."
-	docker build --no-cache --pull -t sp19-222-100/ .
+	docker build --no-cache --pull -t sp19-222-100/main .
 	@echo "image DONE"
 
 docker-start:
 	@echo "starting the NEW service in container..."
-	docker run -v /home/:/home/ -p 8080:8080 sp19-222-100/
+	docker run -v /home/:/home/ -p 8080:8080 sp19-222-100/main:latest
 
 service:
 	@echo "creating the service..."
@@ -23,7 +23,7 @@ service:
 start:  
 	@echo "starting the NEW service..."
 	pip install --upgrade pip
-	pip install -r requirements.txt
+	pip install -r sp19-222-100/project-code/requirements.txt
 	python server.py
 
 docker-stop:
@@ -33,7 +33,7 @@ docker-stop:
 
 docker-remove:
 	@echo "removing the image..."
-	docker rmi -f sp19-222-100/
+	docker rmi -f sp19-222-100/main:latest
 	@echo "image removed"
 
 docker-clean: docker-stop docker-remove
