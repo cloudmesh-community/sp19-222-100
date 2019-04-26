@@ -10,3 +10,9 @@ def download(output):
     fout = "data/"+output
     download_data(url=url, filename=fout)
     return("Data downloaded to " + fout + ".")
+
+def graph():
+    with open("data/imgs/neighbors.png", "rb") as image:
+        f = image.read()
+        b = bytearray(f)
+        return(b[0])

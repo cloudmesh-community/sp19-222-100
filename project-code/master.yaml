@@ -27,7 +27,7 @@ paths:
         "200":
           description: "Run custom analysis"
           schema: {}
-  /run/test:
+  /run/test/<new>:
     get:
       tags:
         - RUN_TEST
@@ -39,7 +39,7 @@ paths:
         "200":
           description: "Run test analysis"
           schema: {}
-  /run/neighbors:
+  /run/neighbors/<new>:
     get:
       tags:
         - RUN_NEIGHBORS
@@ -51,7 +51,7 @@ paths:
         "200":
           description: "Run neighbor search"
           schema: {}
-  /data/<output>:
+  /data/download/<output>:
     get:
       tags:
         - DATA
@@ -62,4 +62,16 @@ paths:
       responses:
         "200":
           description: "Data info"
+          schema: {}
+  /data/show/graph:
+    get:
+      tags:
+        - DATA_GRAPH
+      operationId: data.graph
+      description: "Shows the graph generated from the neighbors endpoint"
+      produces:
+        - "application/png"
+      responses:
+        "200":
+          description: "Show graph"
           schema: {}
