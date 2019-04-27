@@ -4,6 +4,8 @@
 
 :wave: I really want a discussion on why you think political data can be predicted using AI/ML, provide some resources and discuss why it is important to bridge politics and data driven politics. 
 
+:o: basepath in yaml file not in cloudmesh domain, use cloudmesh/ai/voting, check your code after mods
+
 | Mercedes Olson      Jarod Saxberg 
 | mercolso@iu.edu     jsaxberg@iu.edu
 | Indiana University  
