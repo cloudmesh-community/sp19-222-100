@@ -4,8 +4,6 @@
 
 :wave: I really want a discussion on why you think political data can be predicted using AI/ML, provide some resources and discuss why it is important to bridge politics and data driven politics. 
 
-:o: this report is duplicated and should be removed, allso it indicats smaller numbers of people
-
 | Mercedes Olson      Jarod Saxberg 
 | mercolso@iu.edu     jsaxberg@iu.edu
 | Indiana University  
