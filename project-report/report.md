@@ -136,3 +136,85 @@ downloaded as a csv file.
 - Gathering data: both 
 - Code: J = set up kNN algorithm M = set up trainging and testing data
 - Report M = overall outline J = abstract BOTH = review and edits of outline 
+
+## Specification
+
+```
+swagger: "2.0"
+info: 
+  version: "0.0.1"
+  title: "presidential support"
+  description: "Attempts to determine how much support a candidate will receive based on their viewpoints"
+  termsOfService: "http://swagger.io/terms/"
+  license: 
+    name: "Apache"
+host: "localhost:8080"
+basePath: "/"
+schemes: 
+  - "http"
+consumes: 
+  - "application/json"
+produces: 
+  - "application/json"
+paths:
+  /run/custom/<neighbors>/<hlt>/<mil>/<edu>/<tax>/<wmr>/<glb>/<gnr>/<inf>/<mnr>/<img>:
+    get:
+      tags:
+        - RUN_CUSTOM
+      operationId: run.run_custom
+      description: "Runs an analysis based on given arguments"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Run custom analysis"
+          schema: {}
+  /run/test/<new>:
+    get:
+      tags:
+        - RUN_TEST
+      operationId: run.run_test
+      description: "Runs an analysis based on test/train data from dataset."
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Run test analysis"
+          schema: {}
+  /run/neighbors/<new>:
+    get:
+      tags:
+        - RUN_NEIGHBORS
+      operationId: run.neighbors
+      description: "Determines best neighbor argument to use for KNN algorithm"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Run neighbor search"
+          schema: {}
+  /data/download/<output>:
+    get:
+      tags:
+        - DATA
+      operationId: data.download
+      description: "Downloads data from an external location"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Data info"
+          schema: {}
+  /data/show/graph:
+    get:
+      tags:
+        - DATA_GRAPH
+      operationId: data.graph
+      description: "Shows the graph generated from the neighbors endpoint"
+      produces:
+        - "application/png"
+      responses:
+        "200":
+          description: "Show graph"
+          schema: {}
+```
