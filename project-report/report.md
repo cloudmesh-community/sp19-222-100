@@ -1,12 +1,14 @@
+# Political Bias and Voting Trends sp19-222-100 sp19-222-96
+
 :warning: in review 
 
 :wave: I really want a discussion on why you think political data can be predicted using AI/ML, provide some resources and discuss why it is important to bridge politics and data driven politics. 
 
-# Political Bias and Voting Trends sp19-222-100 sp19-222-96
+:o: this report is duplicated and should be removed, allso it indicats smaller numbers of people
 
 | Mercedes Olson      Jarod Saxberg 
 | mercolso@iu.edu     jsaxberg@iu.edu
-| Indiana University  Indiana University
+| Indiana University  
 | hid: sp19-222-96    sp19-222-100
 | github: [:cloud:](https://github.com/cloudmesh-community/sp19-222-100/blob/master/project_report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/sp19-222-100/tree/master/project_code)
