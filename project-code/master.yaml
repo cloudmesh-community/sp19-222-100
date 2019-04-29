@@ -7,7 +7,7 @@ info:
   license: 
     name: "Apache"
 host: "localhost:8080"
-basePath: "/"
+basePath: "/cloudmesh/ai/voting"
 schemes: 
   - "http"
 consumes: 

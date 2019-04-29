@@ -4,10 +4,6 @@
 
 :wave: I really want a discussion on why you think political data can be predicted using AI/ML, provide some resources and discuss why it is important to bridge politics and data driven politics. 
 
-:o: make sure to include an images dir in project-report and place your figures in there
-
-:o: basepath in yaml file not in cloudmesh domain, use cloudmesh/ai/voting, check your code after mods
-
 | Mercedes Olson      Jarod Saxberg 
 | mercolso@iu.edu     jsaxberg@iu.edu
 | Indiana University  
@@ -79,8 +75,8 @@ endpoints are files within the directory structure. Below, the basepath and
 endpoints are listed.
 
 BASE PATH:
-- /cloudmesh/preselec
-  - Prefixes all endpoints; for example, `/cloudmesh/preselec/run/test`.
+- /cloudmesh/ai/voting
+  - Prefixes all endpoints; for example, `/cloudmesh/ai/voting/run/test/0`.
 
 END POINTS:
 - /data/download/\<file\>.csv
@@ -96,16 +92,36 @@ END POINTS:
 
 ### Docker
 
-containers
+Docker containers were used in this project to create an image that held all of
+the requirements to run this project. Containers are good to use because it 
+eliminates the requirement of downloading all the necessary files to a personal
+computer and allows them to be easily removed by deleting the image. It also
+allows one common operating system--in this case, Ubuntu--to be used across all
+projects, thus eliminating the troubles that can arise from a mixture of 
+operating systems.
 
 ## Dataset
 
 The dataset for this project had to be built from scratch as there were not any
-easily accessible dataset with the features desired. On order to create the
+easily accessible datasets with the features desired. In order to create the
 dataset, google sheets was used to input data, and then the spreadsheet was
-downloaded as a csv file. After converting the dataset to a cvs file it was then uploaded on to a website. The actual information on the website included the top 4 presidentail candidates, based off total votes and percentage of votes, from the years 1988 to 2016 with their respective parties. After selecting the candidates, the ten topics that were chosen. The topics included if they supported increase in funds for healthcare, increase in militray funding and involvement, increase in funding for education, increasing taxes on the wealthy, women's rights and supporting aborotion, supporting world trade and globalism, not putting restrictions on gun rights, supporting minority rights, and supporting immigration into the US. Each presidential candidate got either a 1 or 0 if they were for it or againt it respectively as that was the best for k nearest neighbors. An example would be if the candidate had a 0 in the 3rd element and 1 in the 5th element they would not support increase in funding for education but they support womens rights and are pro choice. One final thing to take into consideration when making this data is bias and limitations of records can affect the results.   
+downloaded as a csv file. After converting the dataset to a csv file, it was 
+then uploaded to a website that can be accessed through the python requests
+library. The information obtained from the Federal Elections Commissions 
+website included the top 4 presidential candidates based off the total votes 
+and percentage of votes received from the years 1988 to 2016 with their 
+respective parties. After selecting the candidates ten topics were chosen. The
+topics include healthcare, military, education, taxing the wealthy, women's
+rights, globalism, gun rights, infrastructure, minority rights, and immigration.
+Each presidential candidate received a 1 or 0 if they supported or opposed a 
+topic, based on research from the website OnTheIssues and wikipedia pages about
+the respective campaigns. An example would be if the candidate had a 0 in the 
+3rd element and 1 in the 5th element, their actions in the past show opposition
+to education and support for women's rights. One final thing to take into 
+consideration when making this data is personal bias and the limitations of 
+records can affect the results.   
 
-- Websites we got data from 
+- Websites the data was obtained from:
     - https://www.ontheissues.org/default.htm
     
     - https://transition.fec.gov/pubrec/electionresults.shtml
@@ -115,8 +131,14 @@ downloaded as a csv file. After converting the dataset to a cvs file it was then
     
 ## Results
 
-- accuracy (f1 score, precision, recall, etc)
-- possibly run lasso algorithm to see which features are the most/least impactful
+It is difficult to draw conclusive results from this machine learning
+application primarily because of the limited size of the dataset. There are
+only 32 entries in the dataset, so the algorithm does not have a lot of data to
+go on. Running the algorithm multiple times returns multiple different values 
+for the precision, recall, and f1-score. It is primarily dependent on which 
+entries are chosen for the testing and training datasets. The algorithm could
+be improved with additional candidates dating further back from 1988, but the
+farther back it goes, the less data is easily available.
 
 ## Discussion
 
@@ -129,7 +151,14 @@ downloaded as a csv file. After converting the dataset to a cvs file it was then
 
 ## Work Breakdown
 
-Going through candidates and creating the dataset was an even contriubtion for both contributors. The coding aspect was spilt in a way that Jarod set up the kNN algorithm and Merecedes set up training and testing data. Both working on docker file. The report was broken down in segaments with Mercedes starting and doing the over all outline and Jarod working on the abstact. Both colaborators worked evenly and together editing and finalizing the resport for every section.  
+Going through candidates and creating the dataset was an even contriubtion from
+both contributors. The coding aspect was spilt in a way that Jarod set up the 
+KNN algorithm and Mercedes set up the training and testing part of the 
+algorithm. The dockerfile was worked on by both authors, and running and
+testing the docker containers was done on Mercedes's computer. The report was 
+broken down in segments with Mercedes writing the initial outline and Jarod 
+working on the abstact. Both colaborators worked evenly on writing and editing
+the rest of the sections of the report. 
 
 ## Specification
 
@@ -143,7 +172,7 @@ info:
   license: 
     name: "Apache"
 host: "localhost:8080"
-basePath: "/"
+basePath: "/cloudmesh/ai/voting"
 schemes: 
   - "http"
 consumes: 
