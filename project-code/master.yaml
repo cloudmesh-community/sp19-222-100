@@ -3,7 +3,6 @@ info:
   version: "0.0.1"
   title: "presidential support"
   description: "Attempts to determine how much support a candidate will receive based on their viewpoints"
-  termsOfService: "http://swagger.io/terms/"
   license: 
     name: "Apache"
 host: "localhost:8080"
