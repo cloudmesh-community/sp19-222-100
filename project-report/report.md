@@ -101,15 +101,8 @@ containers
 The dataset for this project had to be built from scratch as there were not any
 easily accessible dataset with the features desired. On order to create the
 dataset, google sheets was used to input data, and then the spreadsheet was
-downloaded as a csv file. 
+downloaded as a csv file. After converting the dataset to a cvs file it was then uploaded on to a website. The actual information on the website included the top 4 presidentail canidates, based off total votes and percentage of votes, from the years 1988 to 2016 with their respective parties. After selecting the candidates, the ten topics that were chosen. The topics included if they supported increase in funds for healthcare, increase in militray funding and involvement, increase in funding for education, increasing taxes on the wealthy, women's rights and supporting aborotion, supporting world trade and globalism, not putting restrictions on gun rights, supporting minority rights, and supporting immigration into the US. Each presidential candidate got either a 1 or 0 if they were for it or againt it respectively as that was the best for k nearest neighbors. An example would be if the candidate had a 0 in the 3rd element and 1 in the 5th element they would not support increase in funding for education but they support womens rights and are pro choice. One final thing to take into consideration when making this data is bias and limitations of records can affect the results.   
 
-- took csv file and uploaded to website 
-- presidential candidate from the years 1988 to 2016 with party  
-- top 4 year year both with percent and number of votes 
-- array of 0 and 1 (best for k nearest neighbors) that say if they support the 10 topics
-- for the Keywords/Label array each element correlates with the topics 
-    - example is 0 for 3rd element means they do not support education 
-    - example is 1 for 5th element means they do support womens right and pro choice 
 - Websites we got data from 
     - https://www.ontheissues.org/default.htm
     
@@ -117,7 +110,6 @@ downloaded as a csv file.
     
     This page and other Canidates Wikipedia pages
     - https://en.wikipedia.org/wiki/Barack_Obama_2008_presidential_campaign
-- note bias and limitations while creating dataset which can affect results
     
 ## Results
 
@@ -135,9 +127,7 @@ downloaded as a csv file.
 
 ## Work Breakdown
 
-- Gathering data: both 
-- Code: J = set up kNN algorithm M = set up trainging and testing data
-- Report M = overall outline J = abstract BOTH = review and edits of outline 
+Going through candidates and creating the dataset was an even contriubtion for both contributors. The codding aspect was spilt in a way that Jarod set the kNN algorithm and Merecedes set up training and testing data. Both working on docker file. The report was broken down in segaments with Mercedes starting and doing the over all outline and Jarod working on the abstact. Both colaborators worked evenly and together editing and finalizing the resport for every section.  
 
 ## Specification
 
