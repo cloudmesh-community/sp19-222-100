@@ -168,6 +168,18 @@ grown exponentially since this research was done in 2011.
 
 - reiterate results and accuracy, future endeavors/predictions (if any) 
 
+As stated earlier in the results section, the data is hard to conclude as there 
+is only 32 entries. The precision, recall, and f1-scores varied each time the 
+algorithm ran. The best number of neighbors for this dataset was an 8 as it had
+the lowest error rate.
+
+To better improve the results more canditates form past elections could be added
+to improve all results, it would require much more research on the topics they 
+support as the information is more difficult to access. It would also improve
+in time as the amount of cadidates increased as their campaigne would be better
+documented and then added to the data set. The predictions would gradually get
+more accurate results with a lessor error rate as times go on.  
+
 ## Work Breakdown
 
 Going through candidates and creating the dataset was an even contriubtion from
