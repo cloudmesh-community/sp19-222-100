@@ -2,6 +2,8 @@
 
 :warning: in review 
 
+:warning: please do not rush to finish if you need a bit more time take it, that is not a problem .
+
 :wave: I really want a discussion on why you think political data can be predicted using AI/ML, provide some resources and discuss why it is important to bridge politics and data driven politics. 
 
 | Mercedes Olson      Jarod Saxberg 
