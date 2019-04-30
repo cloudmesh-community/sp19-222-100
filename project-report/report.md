@@ -30,12 +30,14 @@ The goal of this project was to predict if a hypothetical candidate would win ba
 :wave: avoid phrases like the goal of this project. 
 
 ## Requirements
-To run this, docker must be installed and working, once thats complete a docker
- account must be created to use docker. After, the Makefile and dockerfile must
- be downloaded in a new directory. To build the docker container run the command
- make docker -all. Docker within itself will download needed python libraries 
-found from inside requirements.txt and then start the server on its own. Then 
-the end points will be avaible to access.
+
+In order to run this project, docker must be installed and working. Once 
+complete, a docker account must be created to use docker. After creating an
+account, download the Makefile and Dockerfile to a new directory. To build the 
+docker container, run the command `make docker-all`. The Docker container will
+download the necessary python libraries found within requirements.txt and then
+start the REST service on its own. The endpoints will then be avaible to 
+access through a web browser or curl client.
 
 ## Design
 
@@ -67,9 +69,9 @@ the arguments are added to an array that is then passed through the predict
 function and the classifier determines if the candidate would win or lose based
 on the given arguments. 
 
-### REST API
+### REST Service
 
-The REST API allows simple connection between backend python code and a
+The REST Service allows simple connection between backend python code and a
 frontend website/API where users can pass data in and receive it back as a json
 formatted object. People can easily access the classifier through the API
 without the need to build it and run it on their own. Endpoints are 
@@ -166,19 +168,17 @@ grown exponentially since this research was done in 2011.
 
 ## Conclusion
 
-- reiterate results and accuracy, future endeavors/predictions (if any) 
+As stated in the results section, it is difficult to draw conclusions to the
+accuracy of this application of machine learning because there is only 32 
+entries total in the dataset. The precision, recall, and f1-scores varied each 
+time the algorithm ran. Likewise, the best n_neighbors argument varied with 
+each testing and training dataset used.
 
-As stated earlier in the results section, the data is hard to conclude as there 
-is only 32 entries. The precision, recall, and f1-scores varied each time the 
-algorithm ran. The best number of neighbors for this dataset was an 8 as it had
-the lowest error rate.
-
-To better improve the results more canditates form past elections could be added
-to improve all results, it would require much more research on the topics they 
-support as the information is more difficult to access. It would also improve
-in time as the amount of cadidates increased as their campaigne would be better
-documented and then added to the data set. The predictions would gradually get
-more accurate results with a lessor error rate as times go on.  
+To better improve the results, more canditates from past elections could be 
+added--it would require more in depth research on the topics they support as 
+the information is more difficult to access. It would also improve over time 
+as the amount of candidates increases and their campaigns would be better
+documented. The predictions would gradually get more accurate as time goes on.
 
 ## Work Breakdown
 
