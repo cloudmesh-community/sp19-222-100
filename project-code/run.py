@@ -82,4 +82,4 @@ def find_best(graph, x_train, x_test, y_train, y_test):
 
         return(str(error.index(min(error)) + 1) + ". Graph can be found at endpoint /data/show/graph")
     else:
-        return(str(error.index(min(error)) + 1))
+        return(error.index(min(error)) + 1)
