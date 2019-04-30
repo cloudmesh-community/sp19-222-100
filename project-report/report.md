@@ -30,9 +30,12 @@ The goal of this project was to predict if a hypothetical candidate would win ba
 :wave: avoid phrases like the goal of this project. 
 
 ## Requirements
-
-what is needed to run:
-- Docker within itself will download needed python libraries found from inside requirements.txt
+To run this, docker must be installed and working, once thats complete a docker
+ account must be created to use docker. After, the Makefile and dockerfile must
+ be downloaded in a new directory. To build the docker container run the command
+ make docker -all. Docker within itself will download needed python libraries 
+found from inside requirements.txt and then start the server on its own. Then 
+the end points will be avaible to access.
 
 ## Design
 
