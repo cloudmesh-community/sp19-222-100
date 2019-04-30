@@ -83,9 +83,9 @@ END POINTS:
   - Downloads the csv data file, named as the argument provided for file.
 - /data/show/graph
   - Shows the graph generated from /run/neighbors
-- /run/neighbors/\<new\>
+- /run/neighbors
   - Runs an analysis that determines the best argument for n_neighbors.
-- /run/test/\<new\>
+- /run/test
   - Runs an analysis with testing and training sets, also exports a graph.
 - /run/custom/\<neighbors\>/\<healthcare\>/\<military\>/\<education\>/\<tax wealthy\>/\<womens rights\>/\<globalism\>/\<gun rights\>/\<infrastructure\>/\<minority rights\>/\<immigration\>
   - Allows user to perform classification with custom arguments.
@@ -202,7 +202,7 @@ paths:
         "200":
           description: "Run custom analysis"
           schema: {}
-  /run/test/<new>:
+  /run/test:
     get:
       tags:
         - RUN_TEST
@@ -214,7 +214,7 @@ paths:
         "200":
           description: "Run test analysis"
           schema: {}
-  /run/neighbors/<new>:
+  /run/neighbors:
     get:
       tags:
         - RUN_NEIGHBORS

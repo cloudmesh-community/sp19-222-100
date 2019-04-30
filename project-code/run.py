@@ -1,3 +1,4 @@
+import os
 import pandas
 import requests
 import numpy as np
@@ -7,7 +8,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
 url = "http://pages.iu.edu/~jsaxberg/pres.csv"
-x_train_g, y_train_g, x_text_g, y_test_g = "", "", "", ""
 
 def get_data():
     req = requests.get(url, allow_redirects=True)
@@ -28,35 +28,33 @@ def run_custom(neighbors, hlt, mil, edu, tax, wmr, glb, gnr, inf, mnr, img):
     
     return("Your candidate with data: %s %s %s %s %s %s %s %s %s %s would %s a hypothetical presidential election according to this algorithm." % (hlt, mil, edu, tax, wmr, glb, gnr, inf, mnr, img, "WIN" if y_pred==[1] else "LOSE"))
 
-def run_test(new):
+def run_test():
     data = get_data()
 
     x = data.iloc[:, 5:15].values
     y = data.iloc[:, -1].values
     
-    if(x_train_g is "" or new == 1):
-        x_train_g, x_test_g, y_train_g, y_test_g = train_test_split(x, y, test_size=0.2)
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
-    classifier = KNeighborsClassifier(n_neighbors=find_best(False, x_train_g, x_test_g, y_train_g, y_test_g))
-    classifier.fit(x_train_g, y_train_g)
+    classifier = KNeighborsClassifier(n_neighbors=find_best(False, x_train, x_test, y_train, y_test))
+    classifier.fit(x_train, y_train)
 
-    y_pred = classifier.predict(x_test_g)
+    y_pred = classifier.predict(x_test)
 
-    matrix = str(confusion_matrix(y_test_g, y_pred))
-    report = str(classification_report(y_test_g, y_pred))
+    matrix = str(confusion_matrix(y_test, y_pred))
+    report = str(classification_report(y_test, y_pred))
 
     return("Confusion Matrix: %s Classification Report: %s" % (matrix, report))
 
-def neighbors(new):
+def neighbors():
     data = get_data()
 
     x = data.iloc[:, 5:15].values
     y = data.iloc[:, -1].values
 
-    if(x_test_g is "" or new == 1):
-        x_train_g, x_test_g, y_train_g, y_test_g = train_test_split(x, y, test_size=0.2)
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
-    best_num = find_best(True, x_train_g, x_test_g, y_train_g, y_test_g)
+    best_num = find_best(True, x_train, x_test, y_train, y_test)
 
     return("The best n_neighbors argument to use is: %s" % str(best_num))
 
@@ -79,7 +77,9 @@ def find_best(graph, x_train, x_test, y_train, y_test):
             os.remove('data/imgs/neighbors.png')
 
         plt.savefig('data/imgs/neighbors.png')
+        
+        plt.close()
 
-        return("Graph and n_neighbors can be found at endpoint: /data/graph")
+        return(str(error.index(min(error)) + 1) + ". Graph can be found at endpoint /data/show/graph")
     else:
-        return(5)
+        return(str(error.index(min(error)) + 1))
