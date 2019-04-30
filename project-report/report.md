@@ -107,28 +107,20 @@ easily accessible datasets with the features desired. In order to create the
 dataset, google sheets was used to input data, and then the spreadsheet was
 downloaded as a csv file. After converting the dataset to a csv file, it was 
 then uploaded to a website that can be accessed through the python requests
-library. The information obtained from the Federal Elections Commissions 
+library. The information obtained from the Federal Election Commissions [@fec] 
 website included the top 4 presidential candidates based off the total votes 
 and percentage of votes received from the years 1988 to 2016 with their 
 respective parties. After selecting the candidates ten topics were chosen. The
 topics include healthcare, military, education, taxing the wealthy, women's
 rights, globalism, gun rights, infrastructure, minority rights, and immigration.
 Each presidential candidate received a 1 or 0 if they supported or opposed a 
-topic, based on research from the website OnTheIssues and wikipedia pages about
-the respective campaigns. An example would be if the candidate had a 0 in the 
-3rd element and 1 in the 5th element, their actions in the past show opposition
-to education and support for women's rights. One final thing to take into 
-consideration when making this data is personal bias and the limitations of 
-records can affect the results.   
+topic, based on research from the website OnTheIssues [@ontheissues] and 
+wikipedia pages about the respective campaigns. An example would be if the 
+candidate had a 0 in the 3rd element and 1 in the 5th element, their actions 
+in the past show opposition to education and support for women's rights. One 
+final thing to take into consideration when making this data is personal bias 
+and the limitations of records can affect the results.   
 
-- Websites the data was obtained from:
-    - https://www.ontheissues.org/default.htm
-    
-    - https://transition.fec.gov/pubrec/electionresults.shtml
-    
-    This page and other Canidates Wikipedia pages
-    - https://en.wikipedia.org/wiki/Barack_Obama_2008_presidential_campaign
-    
 ## Results
 
 It is difficult to draw conclusive results from this machine learning
@@ -152,8 +144,20 @@ iteration of the testing and training datasets.
 
 ## Discussion
 
-- discussion on how political data can apply to AI/ML, especially in today's time (polarization makes AI/ML easier)
-- importance of making the connection/application
+Machine learning and artifical intelligence are both hot topics having grown
+exponentially in popularity during the past ten years--many people are racing
+to find new ways to apply these algorithms to real-world scenarios. An area of
+interest for this project is how machine learning applies to politics, 
+specifically data-driven politics. The application has been difficult, however.
+As shown in Gayo-Avello, Metaxas, Mustafaraj 2011 [@gayo2011limits], it is 
+difficult to draw correlations between analysis results and electoral outcomes.
+Prior research has been done connecting measures of public opinion measured 
+from polls with semtiment measured from text as shown in O'Connor et al. 2010 
+[@o2010tweets], and it shows promise having correlations as high as 80%. The
+research shows how sentiment from text could be used as a subsitute for typical
+polling and predict movement in the polls; however, using Twitter as the source
+for text nowadays would create issues as the amount of bots on Twitter has 
+grown exponentially since this research was done in 2011.
 
 ## Conclusion
 
@@ -178,7 +182,6 @@ info:
   version: "0.0.1"
   title: "presidential support"
   description: "Attempts to determine how much support a candidate will receive based on their viewpoints"
-  termsOfService: "http://swagger.io/terms/"
   license: 
     name: "Apache"
 host: "localhost:8080"
