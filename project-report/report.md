@@ -1,11 +1,5 @@
 # Political Bias and Voting Trends
 
-:warning: in review 
-
-:warning: please do not rush to finish if you need a bit more time take it, that is not a problem .
-
-:wave: I really want a discussion on why you think political data can be predicted using AI/ML, provide some resources and discuss why it is important to bridge politics and data driven politics. 
-
 | Mercedes Olson      Jarod Saxberg 
 | mercolso@iu.edu     jsaxberg@iu.edu
 | Indiana University  
@@ -15,19 +9,32 @@
 
 ## Abstract
 
-blah
+Sklearn's K-Nearest Neighbors algorithm was used to train a classifier which
+determines if a presidential candidate would win or lose an election based on
+their support or opposition to ten issues-healthcare, military, education,
+taxing the wealthy/businesses, women's rights, globalism, gun rights,
+infrastructure, minority rights, and immigration. Correlations were attempted
+to be made between the algorithm results and actual presidential election
+results.
 
 ## Introduction 
 
-Sklearn's K-Nearest Neighbors algorithm was used to train a classifier which
-determines if a presidential candidate would win or lose an election based on
-their support or opposition to ten issues-healthcare, military, education, 
-taxing the wealthy/businesses, women's rights, globalism, gun rights,
-infrastructure, minority rights, and immigration. 
+K-Nearest Neighbors is a basic yet essential classification algorithm. It is
+non-parametric, so it does not make any underlying assumptions about the 
+distribuion of data. A simple algorithm to follow for KNN is as follows:
 
-The goal of this project was to predict if a hypothetical candidate would win based off of what idea and views they supported for a specific ten issues. The issues include if the candidate supported healthcare, increase in spending on military, education, increase taxes on the wealthy, supporting women rights, globalism, gun rights, increase in infrustructure, minoity rights, and immigration. The reason behind this was to try and determine the political voting trends of the United States. The algorithm used was K Neareest Neighbor and the implimentation will later be discussed. 
+- Store training samples in an array
+- Calculate Euclidean distance between the test data point and all training data points
+- Make a set of the smallest distances obtained
+- Return the majority label from the set
 
-:wave: avoid phrases like the goal of this project. 
+The algorithm finds the training data point that is most similar to the testing
+data point. Once found, it determines the classification of the test data from
+the classification from the nearest training data. This was used with a dataset
+containing ten features that will determine one classification. The features 
+and classification are aligned so that the algorithm will attempt to predict if
+a candidate would win an election based on their support or opposition of the
+ten features. 
 
 ## Requirements
 
@@ -164,7 +171,9 @@ from polls with semtiment measured from text as shown in O'Connor et al. 2010
 research shows how sentiment from text could be used as a subsitute for typical
 polling and predict movement in the polls; however, using Twitter as the source
 for text nowadays would create issues as the amount of bots on Twitter has 
-grown exponentially since this research was done in 2011.
+grown exponentially since this research was done in 2011. There are other more
+reliable ways to obtain data for use with machine learning that are not
+affected in the ways that social media is.
 
 ## Conclusion
 
