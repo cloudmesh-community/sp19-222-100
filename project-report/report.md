@@ -86,13 +86,16 @@ their own. Endpoints are developer-designed urls that can be navigated
 to so users can run the classifier and other useful features. The
 basepath is what prefixes all other endpoints; it can be thought of as
 a top level directory and all of the endpoints are files within the
-directory structure. @sec:spec displays the basepath and endpoints
-used. For readabilty and length the endpoint that allows a user to
-perfrom a custom classification used abbreviations. To clarify the
-abbreviations the end point is provided next. 
+directory structure. The specification in YAML that showcases the
+basepath and endpoints used can be found in @sec:spec. For readability
+and length the endpoint that allows a user to perfrom a custom
+classification used abbreviations. To clarify the abbreviations the
+end point is provided next.
   
 ``` 
- /run/custom/\<neighbors\>/\<healthcare\>/\<military\>/\<education\>/\<tax wealthy\>/\<womens rights\>/\<globalism\>/\<gun rights\>/\<infrastructure\>/\<minority rights\>/\<immigration\>
+ /run/custom/\<neighbors\>/\<healthcare\>/\<military\>/\<education\>/\<tax
+ wealthy\>/\<womens rights\>/\<globalism\>/\<gun
+ rights\>/\<infrastructure\>/\<minority rights\>/\<immigration\>
 ```
 
 ### Docker
