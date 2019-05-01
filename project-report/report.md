@@ -93,9 +93,9 @@ classification used abbreviations. To clarify the abbreviations the
 end point is provided next with the abbreviations spelled out.
   
 ``` 
- /run/custom/\<neighbors\>/\<healthcare\>/\<military\>/\<education\>/\<tax
- wealthy\>/\<womens rights\>/\<globalism\>/\<gun
- rights\>/\<infrastructure\>/\<minority rights\>/\<immigration\>
+ /run/custom/<neighbors>/<healthcare>/<military>/<education>/<tax
+ wealthy\>/<womens rights>/<globalism>/<gun
+ rights>/<infrastructure>/<minority rights>/<immigration>
 ```
 
 ### Docker
