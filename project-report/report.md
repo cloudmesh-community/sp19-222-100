@@ -153,28 +153,31 @@ the testing and training datasets.
 
 ## Discussion
 
-Machine learning and artifical intelligence are both hot topics having grown
-exponentially in popularity during the past ten years--many people are racing
-to find new ways to apply these algorithms to real-world scenarios. An area of
-interest for this project is how machine learning applies to politics, 
-specifically data-driven politics. The application has been difficult, however.
-As shown in Gayo-Avello, Metaxas, Mustafaraj 2011 [@gayo2011limits], it is 
-difficult to draw correlations between analysis results and electoral outcomes.
-Prior research has been done connecting measures of public opinion measured 
-from polls with semtiment measured from text as shown in O'Connor et al. 2010 
-[@o2010tweets], and it shows promise having correlations as high as 80%. The
-research shows how sentiment from text could be used as a subsitute for typical
-polling and predict movement in the polls; however, using Twitter as the source
-for text nowadays would create issues as the amount of bots on Twitter has 
-grown exponentially since this research was done in 2011. There are other more
-reliable ways to obtain data for use with machine learning that are not
-affected in the ways that social media is. Combining typical polling with 
-machine learning could be a path forward that might produce positive results, 
-and help politicians run their campaigns. Machine learning can also help voters
-make better informed decisions about the candidates available for them to vote
-on and the stances they hold on certain issues. There are many different
-applications of machine learning to political data, it is just a matter of 
-finding the best approach and refining the algorithm until error rates are low.
+Machine learning and artifical intelligence are both hot topics having
+grown exponentially in popularity during the past ten years--many
+people are racing to find new ways to apply these algorithms to
+real-world scenarios. An area of interest for this project is how
+machine learning applies to politics, specifically data-driven
+politics. The application has been difficult, however.  As shown in
+Gayo-Avello, Metaxas, Mustafaraj 2011 [@gayo2011limits], it is
+difficult to draw correlations between analysis results and electoral
+outcomes.  Prior research has been done connecting measures of public
+opinion measured from polls with semtiment measured from text as shown
+in [@o2010tweets], and it shows promise having correlations as high as
+80%. The research shows how sentiment from text could be used as a
+subsitute for typical polling and predict movement in the polls;
+however, using Twitter as the source for text nowadays would create
+issues as the amount of bots on Twitter has grown exponentially since
+this research was done in 2011. There are other more reliable ways to
+obtain data for use with machine learning that are not affected in the
+ways that social media is. Combining typical polling with machine
+learning could be a path forward that might produce positive results,
+and help politicians run their campaigns. Machine learning can also
+help voters make better informed decisions about the candidates
+available for them to vote on and the stances they hold on certain
+issues. There are many different applications of machine learning to
+political data, it is just a matter of finding the best approach and
+refining the algorithm until error rates are low.
 
 ## Conclusion
 
