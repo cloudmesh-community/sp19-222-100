@@ -88,9 +88,9 @@ basepath is what prefixes all other endpoints; it can be thought of as
 a top level directory and all of the endpoints are files within the
 directory structure. The specification in YAML that showcases the
 basepath and endpoints used can be found in @sec:spec. For readability
-and length the endpoint that allows a user to perfrom a custom
+and length the endpoint that allows a user to perform a custom
 classification used abbreviations. To clarify the abbreviations the
-end point is provided next.
+end point is provided next with the abbreviations spelled out.
   
 ``` 
  /run/custom/\<neighbors\>/\<healthcare\>/\<military\>/\<education\>/\<tax
